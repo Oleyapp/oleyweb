@@ -15,3 +15,13 @@ $app->group(['prefix' => '/api/v1', 'namespace' => 'App\Oleyh\Controllers\Api'],
     $app->get('courts', ['uses' => 'CourtController@index']);
 
 });
+
+$app->group([
+        'prefix' => '/court',
+        'namespace' => 'App\Oleyh\Controllers\Court',
+        'middleware' => 'courtType',
+    ],
+    function ($app) {
+        $app->get('/', ['as' => 'court.index', 'uses' => 'CourtController@index']);
+    }
+);
