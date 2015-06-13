@@ -4,7 +4,7 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <b>Oleyh</b>
+        <b>Oléy</b>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>

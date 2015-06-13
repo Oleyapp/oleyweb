@@ -35,5 +35,6 @@ $app->group([
     ],
     function ($app) {
         $app->get('/', ['as' => 'court.index', 'uses' => 'CourtController@index']);
+        $app->get('events', ['as' => 'court.events', 'uses' => 'CourtController@events']);
     }
 );
