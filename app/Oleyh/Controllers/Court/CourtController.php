@@ -20,6 +20,7 @@ class CourtController extends BaseCourtController
 
         $bookings = CalendarBookingObject::where('start_at', '>=', $start)
             ->where('end_at', '<=', $end)
+            ->where('court_id', $this->court->id)
             ->get();
 
         return $bookings;
