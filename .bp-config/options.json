@@ -1,5 +1,5 @@
 {
 	"WEBDIR": "public",
 	"COMPOSER_VENDOR_DIR": "vendor",
-	"PHP_EXTENSIONS": ["bz2", "zlib", "curl", "mcrypt", "mbstring", "pdo", "mysql", "pdo_mysql"]
+	"PHP_EXTENSIONS": ["bz2", "zlib", "curl", "mcrypt", "mbstring", "pdo", "mysql", "pdo_mysql", "memcached"]
 }
