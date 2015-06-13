@@ -1,4 +1,4 @@
-<?php namespace Oleyh\Models;
+<?php namespace App\Oleyh\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

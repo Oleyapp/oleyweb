@@ -1,4 +1,4 @@
-<?php namespace Oleyh\Models;
+<?php namespace App\Oleyh\Models;
 
 class Court extends BaseModel
 {

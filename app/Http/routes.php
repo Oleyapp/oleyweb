@@ -1,20 +1,7 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+$app->group(['prefix' => '/api/v1', 'namespace' => 'App\Oleyh\Controllers\Api'], function ($app) {
 
-$app->get('/', function() {
-    return 'Hello World';
-});
+    $app->get('courts', ['uses' => 'CourtController@index']);
 
-$app->post('/', function() {
-    return 'Hello World';
 });
