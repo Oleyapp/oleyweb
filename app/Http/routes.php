@@ -19,6 +19,16 @@ $app->group(['prefix' => '/api/player/v1', 'namespace' => 'App\Oleyh\Controllers
 });
 
 $app->group([
+        'prefix' => '/api/player/v1',
+        'namespace' => 'App\Oleyh\Controllers\Api',
+        'middleware' => 'playerType',
+    ],
+    function ($app) {
+        $app->post('book', ['uses' => 'BookingController@book']);
+    }
+);
+
+$app->group([
         'prefix' => '/court',
         'namespace' => 'App\Oleyh\Controllers\Court',
         'middleware' => 'courtType',

@@ -65,6 +65,7 @@ $app->middleware([
 $app->routeMiddleware([
     'csrf' => 'Laravel\Lumen\Http\Middleware\VerifyCsrfToken',
     'courtType' => 'App\Oleyh\Middleware\CourtAuthMiddleware',
+    'playerType' => 'App\Oleyh\Middleware\PlayerAuthMiddleware',
 ]);
 
 /*

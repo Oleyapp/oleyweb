@@ -3,6 +3,7 @@
 class Booking extends BaseModel
 {
     protected $fillable = ['player_id', 'start_at', 'end_at'];
+    protected $hidden = ['player'];
 
     protected $validationRules = [
         'save' => [
@@ -20,4 +21,9 @@ class Booking extends BaseModel
         'end_at.required' => 'MISSING_END_AT',
         'end_at.date_format' => 'INVALID_END_AT',
     ];
+
+    public function player()
+    {
+        return $this->belongsTo('App\Oleyh\Models\Player', 'player_id');
+    }
 }

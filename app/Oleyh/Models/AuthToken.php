@@ -7,6 +7,17 @@ class AuthToken extends BaseModel
         return $this->belongsTo('App\Oleyh\Models\Player', 'player_id');
     }
 
+    public static function check($token)
+    {
+        $token = static::where('token', $token)->first();
+
+        if ($token) {
+            return $token;
+        }
+
+        return false;
+    }
+
     public static function generate($player_id)
     {
         $token = new self();
