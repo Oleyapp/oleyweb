@@ -9,4 +9,4 @@ applications:
     CF_STAGING_TIMEOUT: 30
     CF_STARTUP_TIMEOUT: 30
   instances: 1
-  memory: 128M
+  memory: 512M
