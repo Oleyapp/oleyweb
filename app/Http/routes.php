@@ -10,9 +10,11 @@ $app->group(['namespace' => 'App\Oleyh\Controllers\Web'], function ($app) {
 
 });
 
-$app->group(['prefix' => '/api/v1', 'namespace' => 'App\Oleyh\Controllers\Api'], function ($app) {
+$app->group(['prefix' => '/api/player/v1', 'namespace' => 'App\Oleyh\Controllers\Api'], function ($app) {
 
     $app->get('courts', ['uses' => 'CourtController@index']);
+    $app->post('login', ['uses' => 'PlayerController@login']);
+    $app->post('register', ['uses' => 'PlayerController@register']);
 
 });
 

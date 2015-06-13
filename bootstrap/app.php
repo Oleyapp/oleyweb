@@ -60,10 +60,10 @@ $app->middleware([
     'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
     'Illuminate\Session\Middleware\StartSession',
     'Illuminate\View\Middleware\ShareErrorsFromSession',
-    'Laravel\Lumen\Http\Middleware\VerifyCsrfToken',
 ]);
 
 $app->routeMiddleware([
+    'csrf' => 'Laravel\Lumen\Http\Middleware\VerifyCsrfToken',
     'courtType' => 'App\Oleyh\Middleware\CourtAuthMiddleware',
 ]);
 
