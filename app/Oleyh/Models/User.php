@@ -15,6 +15,11 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
     protected $fillable = ['name', 'email', 'password'];
     protected $hidden = ['password', 'remember_token'];
 
+    public function court()
+    {
+        return $this->belongsTo('App\Oleyh\Models\Court', 'court_id');
+    }
+
     public function isCourtType()
     {
         return $this->type == static::TYPE_COURT;
