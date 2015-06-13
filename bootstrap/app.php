@@ -80,6 +80,7 @@ $app->routeMiddleware([
 
 // $app->register('App\Providers\AppServiceProvider');
 $app->register('Irazasyed\Larasupport\Providers\ArtisanServiceProvider');
+$app->register('shivergard\Clusterpoint\ClusterpointServiceProvider');
 
 /*
 |--------------------------------------------------------------------------

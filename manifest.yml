@@ -6,7 +6,7 @@ applications:
   path: .
   domain: mybluemix.net
   env:
-    CF_STAGING_TIMEOUT: 30
-    CF_STARTUP_TIMEOUT: 30
+    CF_STAGING_TIMEOUT: 60
+    CF_STARTUP_TIMEOUT: 60
   instances: 1
   memory: 512M
