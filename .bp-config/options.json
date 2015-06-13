@@ -1,0 +1,4 @@
+{
+	"WEBDIR": "public",
+	"PHP_EXTENSIONS": ["bz2", "zlib", "curl", "mcrypt", "mbstring"]
+}

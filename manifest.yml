@@ -1,0 +1,12 @@
+applications:
+- disk_quota: 1024M
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git
+  host: leman-app-1
+  name: leman-app-1
+  path: .
+  domain: mybluemix.net
+  env:
+    CF_STAGING_TIMEOUT: 30
+    CF_STARTUP_TIMEOUT: 30
+  instances: 1
+  memory: 128M
