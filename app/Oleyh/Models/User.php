@@ -17,6 +17,11 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
 
     public function isCourtType()
     {
-        return $this->type == this::TYPE_COURT;
+        return $this->type == static::TYPE_COURT;
+    }
+
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = \Hash::make($password);
     }
 }

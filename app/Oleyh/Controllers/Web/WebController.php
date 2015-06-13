@@ -21,12 +21,24 @@ class WebController extends BaseWebController
             $user = Auth::user();
 
             if ($user->isCourtType()) {
-                return redirect('court.index');
+                return redirect()->route('court.index');
             }
         } else {
             return redirect()
                 ->back()
                 ->with('message', 'Email or password is incorrect.');
         }
+    }
+
+    public function performLogout()
+    {
+        Auth::logout();
+        return redirect()
+            ->route('index');
+    }
+
+    public function generateHash($pass)
+    {
+        return \Hash::make($pass);
     }
 }
