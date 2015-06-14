@@ -7,7 +7,7 @@ class WebController extends BaseWebController
 {
     public function index()
     {
-        return 'Oleyh';
+        return view('web.start');
     }
 
     public function login()

@@ -14,7 +14,7 @@
         "laravel/lumen-framework": "5.0.*",
         "vlucas/phpdotenv": "~1.0",
         "irazasyed/larasupport": "~1.0",
-        "shivergard/laravel-clusterpoint": "dev-master"
+        "shivergard/laravel-clusterpoint": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0"

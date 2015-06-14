@@ -1,11 +1,50 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebf1bf17711882b579abf959192045c4",
+    "hash": "9a7f1ab187f78ea04e12c2e776828361",
     "packages": [
+        {
+            "name": "clusterpoint/php-client-api",
+            "version": "3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clusterpoint/php-client-api.git",
+                "reference": "859841ebfeb076cbebddbf860b3fe067c4d3614e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clusterpoint/php-client-api/zipball/859841ebfeb076cbebddbf860b3fe067c4d3614e",
+                "reference": "859841ebfeb076cbebddbf860b3fe067c4d3614e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "cps_simple.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ClusterPoint"
+                }
+            ],
+            "homepage": "https://www.clusterpoint.com/",
+            "keywords": [
+                "api",
+                "clusterpoint"
+            ],
+            "time": "2015-03-17 15:58:27"
+        },
         {
             "name": "danielstjules/stringy",
             "version": "1.9.0",
@@ -1690,9 +1729,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/natsu90/laravel-clusterpoint.git",
-                "reference": "6a6249694f2f3d7189368e00a84b15819dc038c5"
+                "reference": "d280861c2476c74637c40f07e6f85b5ecfd6cf9e"
             },
             "require": {
+                "clusterpoint/php-client-api": "@dev",
                 "illuminate/database": "~5.0",
                 "illuminate/support": "~5.0",
                 "php": ">=5.4"
@@ -1723,7 +1763,7 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2015-06-13 16:06:05"
+            "time": "2015-06-13 22:33:21"
         },
         {
             "name": "symfony/console",
