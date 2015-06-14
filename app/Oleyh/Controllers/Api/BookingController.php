@@ -21,6 +21,7 @@ class BookingController extends BaseApiController
             
             $ts = Booking::where('start_at', '<', $book->end_at)
                 ->where('end_at', '>', $book->start_at)
+                ->where('court_id', $book->court_id)
                 ->count();
 
             if ($ts == 0) {
